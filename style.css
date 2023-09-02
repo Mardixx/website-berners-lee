@@ -2,17 +2,315 @@ body {
   display: grid;
   justify-content: center;
   background-color: lightgray;
+  grid-gap: 25px;
   grid-template-columns: 90%;
+  color: gray;
+  font-size: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-body header {
+
+header {
   display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  text-align: center;
   background-color: white;
   border-radius: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 10px;
 }
-body header img {
+header h1 {
+  color: red;
+}
+header button {
+  background-color: red;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  border: none;
+  justify-self: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+header button a {
+  text-decoration: none;
+  color: white;
+}
+header img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   justify-self: center;
   border: 3px solid grey;
+  margin-top: 10px;
+}
+
+main {
+  background-color: white;
+  border-radius: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px 0;
+}
+main a {
+  text-decoration: none;
+  color: gray;
+}
+main ul {
+  display: grid;
+  list-style: none;
+  justify-self: center;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 3.125rem;
+  padding: 0;
+}
+main ul li {
+  display: grid;
+  justify-items: center;
+  margin: 10px 0;
+}
+main ul li a {
+  font-size: 25px;
+}
+main ul li i {
+  font-size: 35px;
+}
+
+footer {
+  display: grid;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+footer em {
+  font-style: normal;
+  background-color: lightgray;
+}
+footer img {
+  width: 50%;
+}
+footer tbody {
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+}
+footer tbody tr {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 410px) {
+  body {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+    grid-gap: 25px;
+    grid-template-columns: 80%;
+    grid-template-rows: 45% 10% 50%;
+    color: gray;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  header h1 {
+    color: red;
+  }
+  header button {
+    background-color: red;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 50px;
+    border: none;
+    justify-self: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  header button a {
+    text-decoration: none;
+    color: white;
+  }
+  header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    border: 3px solid grey;
+    margin-top: 10px;
+  }
+  main {
+    background-color: white;
+    border-radius: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main a {
+    text-decoration: none;
+    color: gray;
+  }
+  main ul {
+    display: grid;
+    list-style: none;
+    justify-self: center;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 3.125rem;
+    padding: 0;
+  }
+  main ul li {
+    display: grid;
+    justify-items: center;
+    margin: 10px 0;
+  }
+  main ul li a {
+    font-size: 25px;
+  }
+  main ul li i {
+    font-size: 35px;
+  }
+  footer {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  footer em {
+    font-style: normal;
+    background-color: lightgray;
+  }
+  footer img {
+    width: 150px;
+  }
+  footer table {
+    display: grid;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 25px;
+  }
+  footer table tbody {
+    display: grid;
+  }
+  footer table tbody tr {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 45% 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+    grid-gap: 25px;
+    grid-template-columns: 50%;
+    color: gray;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-items: center;
+    text-align: center;
+    background-color: white;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  header h1 {
+    color: red;
+  }
+  header button {
+    background-color: red;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 50px;
+    border: none;
+    justify-self: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  header button a {
+    text-decoration: none;
+    color: white;
+  }
+  header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    justify-self: center;
+    border: 3px solid grey;
+    margin-top: 10px;
+  }
+  main {
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+  }
+  main a {
+    text-decoration: none;
+    color: gray;
+  }
+  main ul {
+    display: grid;
+    justify-content: space-evenly;
+    list-style: none;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 3.125rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  main ul li {
+    display: grid;
+  }
+  main ul li a {
+    font-size: 25px;
+  }
+  main ul li i {
+    font-size: 35px;
+  }
+  footer {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  footer em {
+    font-style: normal;
+    background-color: lightgray;
+  }
+  footer img {
+    width: 150px;
+  }
+  footer table {
+    display: grid;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 25px;
+  }
+  footer table tbody {
+    display: grid;
+  }
+  footer table tbody tr {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 45% 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

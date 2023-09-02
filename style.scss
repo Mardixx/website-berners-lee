@@ -2,18 +2,313 @@ body {
     display: grid;
     justify-content: center;
     background-color: lightgray;
+    grid-gap: 25px;
     grid-template-columns: 90%;
+    color: gray;
+    font-size: 20px;
+    height: fit-content;
+}
+header{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    margin-bottom: 10px;
+    h1{
+        color: red;
+    }
+    button{
+        background-color: red;
+        width: fit-content;
+        height: 50px;
+        border: none;
+        justify-self: center;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        justify-self: center;
+        border: 3px solid grey;
+        margin-top: 10px;
+    }
+}
+main{
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    margin: 10px 0;
+    
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    ul {
+        display: grid;
+        list-style: none;
+        justify-self: center;
+        grid-template-rows: 100px 100px 100px;
+        grid-gap: 3.125rem;
+        padding: 0;
+        li {
+            display: grid;
+            justify-items: center;
+            margin: 10px 0;
+            a{
+               font-size: 25px;
+            }
+            i {
+                font-size: 35px;
+            }
+
+        }
+    }
+}
+footer {
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 10px;
+    
+    em {
+        font-style: normal;
+        background-color: lightgray;
+    }
+    img {
+        width: 50%;
+    }
+    tbody {
+        display: grid;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        tr {
+            display: grid;
+            grid-template-columns: 80%;
+            justify-content: center;
+
+        }
+    }
+}
+@media only screen and (min-width: 410px){
+body {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+    grid-gap: 25px;
+    grid-template-columns: 80%;
+    grid-template-rows: 45% 10% 50%;
+    color: gray;
+}
+header{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+    border-radius: 20px;
+    h1{
+        color: red;
+    }
+    button{
+        background-color: red;
+        width: fit-content;
+        height: 50px;
+        border: none;
+        justify-self: center;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        justify-self: center;
+        border: 3px solid grey;
+        margin-top: 10px;
+    }
+}
+main{
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    ul {
+        display: grid;
+        list-style: none;
+        justify-self: center;
+        grid-template-rows: 100px 100px 100px;
+        grid-gap: 3.125rem;
+        padding: 0;
+        li {
+            display: grid;
+            justify-items: center;
+            margin: 10px 0;
+            a{
+               font-size: 25px;
+            }
+            i {
+                font-size: 35px;
+            }
+
+        }
+    }
+}
+footer {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0;
+    
+    em {
+        font-style: normal;
+        background-color: lightgray;
+    }
+    img {
+        width: 150px;
+    }
+    table{
+        display: grid;
+        height: fit-content;
+        padding-top: 25px;
+        tbody {
+            display: grid;
+            tr {
+                display: grid;
+                justify-content: space-evenly;
+                grid-template-columns: 80%;
+                justify-content: center;
+                align-items: center;
+                grid-template-rows: 45% 50%;
+            }
+        }
+    }
+}
+}
+@media only screen and (min-width: 768px){
+    body {
+        display: grid;
+        justify-content: center;
+        background-color: lightgray;
+        grid-gap: 25px;
+        grid-template-columns: 50%;
+        color: gray;
+    }
     header{
         display: grid;
+        grid-template-columns: 90%;
+        justify-items: center;
+        text-align: center;
         background-color: white;
+        height: fit-content;
         border-radius: 20px;
-
+        h1{
+            color: red;
+        }
+        button{
+            background-color: red;
+            width: fit-content;
+            height: 50px;
+            border: none;
+            justify-self: center;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
         img{
             border-radius: 50%;
             width: 150px;
             height: 150px;
             justify-self: center;
             border: 3px solid grey;
+            margin-top: 10px;
         }
     }
-}
+    main{
+        display: grid;
+        background-color: white;
+        border-radius: 20px;
+        height: 100px;
+
+        
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+    
+        ul {
+            display: grid;
+            justify-content: space-evenly;
+            list-style: none;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 3.125rem;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            li {
+                display: grid;
+                a{
+                   font-size: 25px;
+                }
+                i {
+                    font-size: 35px;
+                }
+    
+            }
+        }
+    }
+    footer {
+        background-color: white;
+        border-radius: 20px;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+        
+        em {
+            font-style: normal;
+            background-color: lightgray;
+        }
+        img {
+            width: 150px;
+        }
+        table{
+            display: grid;
+            height: fit-content;
+            padding-top: 25px;
+            tbody {
+                display: grid;
+                tr {
+                    display: grid;
+                    justify-content: space-evenly;
+                    grid-template-columns: 80%;
+                    justify-content: center;
+                    align-items: center;
+                    grid-template-rows: 45% 50%;
+                }
+            }
+        }
+    }
+    }
