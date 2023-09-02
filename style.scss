@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    gap: .625rem;
+    color: #c0bfbc;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 80%;
+        border-radius: 10px;
+        margin-top: 1.875rem;
+        background-color: white;
+
+        .timdiv {
+            margin-top: 1.25rem;
+
+            .tim {
+                border-radius: 50%;
+                width: 9.375rem;
+                height: 9.375rem;
+                border: 3px solid gray;
+            }
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: .625rem;
+
+            h1 {
+                color: red;
+            }
+
+            .text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin: auto;
+                width: 90%;
+                line-height: 1.875rem;
+            }
+
+            button {
+                height: 3.125rem;
+                width: 6.25rem;
+                border: none;
+                background-color: red;
+                border-radius: 15px;
+                margin-bottom: .3125rem;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &:visited {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+main {
+    max-width: 80%;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    font-size: 20px;
+    width: 100%;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 0 !important;
+        background-color: white;
+
+        li {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+            padding: 30px 0px;
+
+            a {
+                text-decoration: none;
+                color: #c0bfbc;
+            }
+
+            i {
+                gap: 0px;
+                font-size: 50px;
+            }
+        }
+
+    }
+}
+
+footer {
+    max-width: 80%;
+    width: 100%;
+    background-color: white;
+    padding: 30px 0px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1.875rem;
+
+
+    .movies {
+        text-align: center;
+
+        em {
+            font-style: normal;
+            background-color: rgb(155, 155, 155);
+        }
+    }
+
+    table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        tbody {
+            width: 90%;
+            text-align: center;
+
+            td {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 25px;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
