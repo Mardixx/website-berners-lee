@@ -1,113 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+  max-width: 50%;
+  margin: auto;
+  background-color: lightgray;
+  color: rgb(158, 156, 156);
+  font-family: "Open Sans", sans-serif;
+}
 
-body{
-    max-width: 50%;
-    margin: auto;
-    background-color: lightgray;
-    color: rgb(158, 156, 156);
-    font-family: 'Open Sans', sans-serif;
+.tim {
+  position: relative;
+  border: 3px solid rgb(175, 172, 172);
+  top: 5%;
+  left: 42%;
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
 }
-.tim{
-    position: relative;
-    border: 3px solid rgb(175, 172, 172);
-    top: 5%;
-    left: 42%;
-    border-radius: 50%;
-    width: 150px;
-    height: auto;
-    
+
+.start {
+  background-color: white;
 }
-.start{
-    background-color: white;
+
+header {
+  margin-top: 40px;
+  height: 550px;
+  border-radius: 1%;
 }
-header{
-    margin-top: 40px;
-    height: 550px;
-    border-radius: 1%;
+
+header h1 {
+  color: rgb(208, 88, 88);
+  text-align: center;
+  margin-top: 50px;
 }
-header h1{
-    color: rgb(208, 88, 88);
-    text-align: center;
-    margin-top: 50px;
+
+header h2 {
+  text-align: center;
 }
-header h2{
-    text-align: center;
+
+header p {
+  max-width: 90%;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 40px;
 }
-header p{
-    max-width: 90%;
-    font-size: 20px;
-    line-height: 50px;
-    margin-left: 40px;
+
+header button {
+  background-color: rgb(208, 88, 88);
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 55%;
+  left: 45%;
 }
-header button{
-    background-color: rgb(208, 88, 88);
-    border-radius: 5px;
-    border: none;
-    width: 150px;
-    height: 50px;
-    position: absolute;
-    top: 55%;
-    left: 45%;
-    
+
+header button a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
-header button a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
+
+.icons {
+  color: rgb(196, 195, 195);
+  background-color: white;
+  border-radius: 1%;
+  height: 200px;
 }
-.icons{
-    color: rgb(196, 195, 195);
-    background-color: white;
-    border-radius: 1%;
-    height: 200px;
+
+.icons a {
+  text-decoration: none;
+  color: rgb(158, 156, 156);
 }
-.icons a{
-    text-decoration: none;
-    color: rgb(158, 156, 156);
-}
+
 .icons a:visited {
-    text-decoration: none;
-    color: rgb(158, 156, 156);
-    font-size: 100px;
+  text-decoration: none;
+  color: rgb(158, 156, 156);
+  font-size: 100px;
 }
+
 .icons a:hover {
-    text-decoration: none;
-    color: rgb(158, 156, 156);
+  text-decoration: none;
+  color: rgb(158, 156, 156);
 }
-i{
-    font-size: 40px;
-    margin-left: 17px;
-    margin-top: 5px;
+
+i {
+  font-size: 40px;
+  margin-left: 17px;
+  margin-top: 5px;
 }
-li{
-    display: inline-block;
-    list-style: none;
-    margin-left: 170px;
-    margin-top: 75px;
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 170px;
+  margin-top: 75px;
 }
-.movies{
-    background-color: white;
-    margin-top: 20px; 
-    border-radius: 1%;
+
+.movies {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 1%;
 }
-td{
-    text-align: center;
-    vertical-align: middle;
+
+td {
+  text-align: center;
+  vertical-align: middle;
 }
-.heading{
-    position: relative;
-    left: 350px;
-    
+
+.heading {
+  position: relative;
+  left: 350px;
 }
-em{
-    font-style: normal;
-    background-color: rgb(203, 201, 201);
+
+em {
+  font-style: normal;
+  background-color: rgb(203, 201, 201);
 }
-td p{
-    font-size: 25px;
+
+td p {
+  font-size: 25px;
 }
-td h3{
-    position: relative;
-    bottom: 90px;
-    font-size: 25px;
-}
+
+td h3 {
+  position: relative;
+  bottom: 90px;
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */
