@@ -8,13 +8,15 @@ body {
   background-color: lightgray;
   gap: 0.625rem;
   color: #c0bfbc;
+  font-size: 20px;
+  text-align: center;
 }
 body header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 80%;
+  max-width: 70%;
   border-radius: 10px;
   margin-top: 1.875rem;
   background-color: white;
@@ -67,7 +69,7 @@ body header .header button a:visited {
 }
 
 main {
-  max-width: 80%;
+  max-width: 70%;
   flex-wrap: wrap;
   background-color: lightgray;
   font-size: 20px;
@@ -97,7 +99,7 @@ main .main li i {
 }
 
 footer {
-  max-width: 80%;
+  max-width: 70%;
   width: 100%;
   background-color: white;
   padding: 30px 0px;
@@ -107,6 +109,7 @@ footer {
 }
 footer .movies {
   text-align: center;
+  margin: 10px;
 }
 footer .movies em {
   font-style: normal;
@@ -131,4 +134,286 @@ footer table tbody td {
 }
 footer table tbody img {
   width: 50%;
+}
+
+@media only screen and (min-width: 410px) {
+  body {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    gap: 0.625rem;
+    color: #c0bfbc;
+  }
+  body header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    border-radius: 10px;
+    margin-top: 1.875rem;
+    background-color: white;
+  }
+  body header .timdiv {
+    margin-top: 1.25rem;
+  }
+  body header .timdiv .tim {
+    border-radius: 50%;
+    width: 9.375rem;
+    height: 9.375rem;
+    border: 3px solid gray;
+  }
+  body header .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.625rem;
+  }
+  body header .header h1 {
+    color: red;
+  }
+  body header .header .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    line-height: 1.875rem;
+  }
+  body header .header button {
+    height: 3.125rem;
+    width: 6.25rem;
+    border: none;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 0.625rem;
+  }
+  body header .header button a {
+    text-decoration: none;
+    color: white;
+  }
+  body header .header button a:hover {
+    color: white;
+  }
+  body header .header button a:visited {
+    color: white;
+  }
+  main {
+    max-width: 90%;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    font-size: 20px;
+    width: 100%;
+  }
+  main .main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0 !important;
+    background-color: white;
+  }
+  main .main li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0px;
+  }
+  main .main li a {
+    text-decoration: none;
+    color: #c0bfbc;
+  }
+  main .main li i {
+    gap: 0px;
+    font-size: 50px;
+  }
+  footer {
+    max-width: 90%;
+    width: 100%;
+    background-color: white;
+    padding: 30px 0px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1.875rem;
+  }
+  footer .movies {
+    text-align: center;
+  }
+  footer .movies em {
+    font-style: normal;
+    background-color: rgb(155, 155, 155);
+  }
+  footer table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer table tbody {
+    width: 90%;
+    text-align: center;
+  }
+  footer table tbody td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  footer table tbody td img {
+    width: 30%;
+  }
+  footer table tbody td p {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    gap: 0.625rem;
+    color: #c0bfbc;
+  }
+  body header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    border-radius: 10px;
+    margin-top: 1.875rem;
+    background-color: white;
+  }
+  body header .timdiv {
+    margin-top: 1.25rem;
+  }
+  body header .timdiv .tim {
+    border-radius: 50%;
+    width: 9.375rem;
+    height: 9.375rem;
+    border: 3px solid gray;
+  }
+  body header .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.625rem;
+  }
+  body header .header h1 {
+    color: red;
+  }
+  body header .header .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    line-height: 1.875rem;
+  }
+  body header .header button {
+    height: 3.125rem;
+    width: 6.25rem;
+    border: none;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 0.625rem;
+  }
+  body header .header button a {
+    text-decoration: none;
+    color: white;
+  }
+  body header .header button a:hover {
+    color: white;
+  }
+  body header .header button a:visited {
+    color: white;
+  }
+  main {
+    max-width: 50%;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    font-size: 20px;
+    width: 100%;
+  }
+  main .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 0 !important;
+    background-color: white;
+  }
+  main .main li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 0px;
+  }
+  main .main li a {
+    text-decoration: none;
+    color: #c0bfbc;
+  }
+  main .main li i {
+    gap: 0px;
+    font-size: 50px;
+  }
+  footer {
+    max-width: 50%;
+    width: 100%;
+    background-color: white;
+    padding: 30px 0px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1.875rem;
+  }
+  footer .movies {
+    text-align: center;
+  }
+  footer .movies em {
+    font-style: normal;
+    background-color: rgb(155, 155, 155);
+  }
+  footer table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer table tbody {
+    width: 90%;
+    text-align: center;
+  }
+  footer table tbody tr {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+  footer table tbody tr .text {
+    display: flex;
+    flex-direction: column;
+  }
+  footer table tbody tr td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 25px;
+    flex-direction: row;
+  }
+  footer table tbody tr td img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
